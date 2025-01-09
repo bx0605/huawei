@@ -6,8 +6,8 @@ import java.util.Stack;
 
 public class 空栈压数 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[] line=sc.nextLine().split(" ");
+        Scanner scanner = new Scanner(System.in);
+        String[] line=scanner.nextLine().split(" ");
         Stack<Integer> stack=new Stack<>();
         for (String l:line){
             stack.push(Integer.valueOf(l));

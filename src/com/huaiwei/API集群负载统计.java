@@ -5,13 +5,13 @@ import java.util.zip.CheckedOutputStream;
 
 public class API集群负载统计 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int nums=Integer.parseInt(sc.nextLine());
+        Scanner scanner = new Scanner(System.in);
+        int nums=Integer.parseInt(scanner.nextLine());
         String [] lines=new String[nums];
         for (int i=0;i<nums;i++){
-            lines[i]=sc.nextLine();
+            lines[i]=scanner.nextLine();
         }
-        String search=sc.nextLine();
+        String search=scanner.nextLine();
         int level=Integer.parseInt(search.split(" ")[0]);
         String world=search.split(" ")[1];
         Count(lines,level,world);

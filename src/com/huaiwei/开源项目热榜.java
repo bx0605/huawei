@@ -4,19 +4,19 @@ import java.io.InputStream;
 import java.util.*;
 public class 开源项目热榜 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //开源项目个数
-        int n=sc.nextInt();
+        int n=scanner.nextInt();
         int [] weights=new int[5];
         //输入权重
-       String wei= sc.next();
+       String wei= scanner.next();
         for(int i=0;i<5;i++){
             weights[i]=Integer.parseInt(wei.split(",")[i]);
         }
         //输入各个开源项目名称以及其在各个权重维度中的分值
         List<Map<String,Object>> projects=new ArrayList<>();
         for (int i=0;i<n;i++){
-            String project=sc.next();
+            String project=scanner.next();
             String name=project.split(",")[0];
             int [] hotValues=new int[5];
             hotValues[0]=Integer.parseInt(project.split(",")[1]);

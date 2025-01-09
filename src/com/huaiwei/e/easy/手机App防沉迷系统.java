@@ -30,16 +30,16 @@ public class 手机App防沉迷系统 {
 
     public static void main(String[] args) {
         //读取要注册的APP数量
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.nextLine();
 
         //用来保存注册成功的App
         List<App> apps = new ArrayList<App>();
 
         for (int i = 0; i < n; i++) {
             List<App> result = new ArrayList<App>();
-            String line = sc.nextLine();
+            String line = scanner.nextLine();
             String[] str = line.split(" ");
             String name = str[0];
             int priority = Integer.parseInt(str[1]);
@@ -66,7 +66,7 @@ public class 手机App防沉迷系统 {
                 apps=result;
             }
         }
-        int minutes = toMinutes(sc.nextLine());
+        int minutes = toMinutes(scanner.nextLine());
         for (App app:apps){
             if (app.endTime>=minutes&&minutes>=app.startTime){
                 System.out.println(app.name);

@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class 查找接口成功率最优时间段 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int minAverageLost=sc.nextInt();
-        sc.nextLine();
-        String[] allNums=sc.nextLine().split(" ");
+        Scanner scanner = new Scanner(System.in);
+        int minAverageLost=scanner.nextInt();
+        scanner.nextLine();
+        String[] allNums=scanner.nextLine().split(" ");
         List<int []> res=new ArrayList<>();
 
         for (int i=0;i<allNums.length-1;i++){

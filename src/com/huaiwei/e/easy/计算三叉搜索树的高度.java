@@ -18,10 +18,10 @@ public class 计算三叉搜索树的高度 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        sc.nextLine();
-        String nums=sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        int n=scanner.nextInt();
+        scanner.nextLine();
+        String nums=scanner.nextLine();
         int maxHigh=1;
         TreeNode treeNode = new TreeNode(Integer.parseInt(nums.split(" ")[0]));
         for (int i=1;i<n;i++){

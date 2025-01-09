@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class 最大坐标值 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         //指令总个数
         try {
-            int all=sc.nextInt();
-            sc.nextLine();
+            int all=scanner.nextInt();
+            scanner.nextLine();
             if (all<1||all>100){
                 throw new Exception();
             }
             //幸运数字
-            int lucky=sc.nextInt();
-            sc.nextLine();
+            int lucky=scanner.nextInt();
+            scanner.nextLine();
             if (lucky<-100||lucky>100){
                 throw new Exception();
             }
             //所有指令
-            String code = sc.nextLine();
+            String code = scanner.nextLine();
             int [] allCode=new int[all];
             int res=0;
             int tmp=0;

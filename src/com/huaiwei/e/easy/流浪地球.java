@@ -4,19 +4,19 @@ import java.util.*;
 
 public class 流浪地球 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         //发动机总数
-        int N=sc.nextInt();
+        int N=scanner.nextInt();
         //计划启动的发动机个数
-        int E=sc.nextInt();
+        int E=scanner.nextInt();
         int [] startTime=new int[N];
         //首先将每个启动时间设置位最大值
         Arrays.fill(startTime,1001);
         for (int i=0;i<E;i++){
             //启动时间
-            int t=sc.nextInt();
+            int t=scanner.nextInt();
             //启动机器编号
-            int p=sc.nextInt();
+            int p=scanner.nextInt();
             startTime[p]=t;
         }
         //双循环遍历，给出每个发动机的启动时间

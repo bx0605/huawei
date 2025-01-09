@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class 找终点 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[] nums=sc.nextLine().split(" ");
+        Scanner scanner = new Scanner(System.in);
+        String[] nums=scanner.nextLine().split(" ");
         int ans=Integer.MAX_VALUE;
         for (int i=1;i<nums.length/2;i++){
             int let=1;

@@ -114,13 +114,13 @@ public class 单词接龙_1 {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int wordIndex = scanner.nextInt();
-        int wordNums = scanner.nextInt();
-       scanner.nextLine();
+        Scanner Scanner = new Scanner(System.in);
+        int wordIndex = Scanner.nextInt();
+        int wordNums = Scanner.nextInt();
+       Scanner.nextLine();
         List<String> wordList = new ArrayList<String>();
         for (int i = 0; i < wordNums; i++) {
-            wordList.add(scanner.nextLine());
+            wordList.add(Scanner.nextLine());
         }
         boolean[] used = new boolean[wordNums];
         used[wordIndex]=true;

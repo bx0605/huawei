@@ -8,9 +8,9 @@ import java.util.TreeSet;
 public class 猜字谜_7 {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        String inputStr=sc.nextLine();
-        String gussStr=sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String inputStr=scanner.nextLine();
+        String gussStr=scanner.nextLine();
         String[] str=inputStr.split(",");
         String[] guss=gussStr.split(",");
         List<String> res=new ArrayList<>();

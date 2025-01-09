@@ -6,25 +6,25 @@ import java.util.Scanner;
 
 public class 日志采集 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        List<Integer> scores=new ArrayList<>();
-        String tmp=sc.nextLine();
+        Scanner scanner=new Scanner(System.in);
+        List<Integer> scannerores=new ArrayList<>();
+        String tmp=scanner.nextLine();
         for(String s:tmp.split(" ")){
-            scores.add(Integer.valueOf(s));
+            scannerores.add(Integer.valueOf(s));
         }
-        int maxScore=0;
+        int maxscannerore=0;
         int currentLog=0;
         int totalDelay=0;
 
-        for (int i=0;i<scores.size();i++){
+        for (int i=0;i<scannerores.size();i++){
             totalDelay+=currentLog;
-            currentLog+=scores.get(i);
+            currentLog+=scannerores.get(i);
             if (currentLog>=100){
-                maxScore=Math.max(maxScore,(100-totalDelay));
+                maxscannerore=Math.max(maxscannerore,(100-totalDelay));
             }else {
-                maxScore=Math.max(maxScore,currentLog-totalDelay);
+                maxscannerore=Math.max(maxscannerore,currentLog-totalDelay);
             }
         }
-        System.out.println(maxScore);
+        System.out.println(maxscannerore);
     }
 }

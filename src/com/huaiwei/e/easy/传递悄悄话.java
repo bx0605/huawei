@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class 传递悄悄话 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
+        Scanner Scanner = new Scanner(System.in);
+        String s = Scanner.nextLine();
         String[] s1 = s.split(" ");
         int[] a=new int[s1.length+1];
         for (int i = 0; i < s1.length; i++) {

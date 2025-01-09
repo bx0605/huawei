@@ -47,9 +47,9 @@ public class 增强的strstr {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String haystack = sc.nextLine();
-        String needle = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String haystack = scanner.nextLine();
+        String needle = scanner.nextLine();
         int i = enhancedStrStr(haystack, needle);
         System.out.println(i);
 

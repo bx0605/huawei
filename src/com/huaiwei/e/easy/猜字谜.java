@@ -3,11 +3,11 @@ import java.util.*;
 
 public class 猜字谜 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //接收谜面单词泪飙
-        String[] a=sc.nextLine().split(",");
+        String[] a=scanner.nextLine().split(",");
         //接收谜底单词列表
-        String[] b=sc.nextLine().split(",");
+        String[] b=scanner.nextLine().split(",");
         //创建一个ArrayList用于存储结果集
         ArrayList<String> resList = new ArrayList<>();
         //标记是否已经找到谜底

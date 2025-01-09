@@ -61,8 +61,8 @@ public class 斗地主之顺子_6 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
         List<Integer> list = transform(s);
         List<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
