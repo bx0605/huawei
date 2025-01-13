@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class 寻找身高相近的小朋友 {
     public static void main(String[] args) {
         InputStream in = System.in;
-        Scanner sc = new Scanner(in);
-        int mingHeight=sc.nextInt();
-        int numFriends=sc.nextInt();
+        Scanner scanner = new Scanner(in);
+        int mingHeight=scanner.nextInt();
+        int numFriends=scanner.nextInt();
         List<Integer> firendLists=new ArrayList<>();
         for (int i=0;i<numFriends;i++){
-            firendLists.add(sc.nextInt());
+            firendLists.add(scanner.nextInt());
         }
         firendLists.sort(new Comparator<Integer>() {
             @Override

@@ -52,9 +52,9 @@ import java.util.*;
  */
 public class 连续字母长度_2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        int n = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        int n = scanner.nextInt();
         Map<Character, Integer> map = new HashMap<>();
         int count = 1;
         for (int i = 0; i < s.length(); i++) {

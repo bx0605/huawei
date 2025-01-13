@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class 响应报文时间_4 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        int n=scanner.nextInt();
+        scanner.nextLine();
         long minTime=Integer.MAX_VALUE;
         for (int i=0;i<n;i++){
             //读取每个报文的时间
-            int T=sc.nextInt();
+            int T=scanner.nextInt();
             //读取最大的响应时间
-            int M=sc.nextInt();
+            int M=scanner.nextInt();
             long maxResponseTime=getBwTime(M);
             long responseTime=maxResponseTime+T;
             if (responseTime<minTime){

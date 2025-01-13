@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class 分糖果 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int candies=sc.nextInt();
+        Scanner scanner=new Scanner(System.in);
+        int candies=scanner.nextInt();
         int steps=0;
         while(candies>1){
             if (candies%2==0){

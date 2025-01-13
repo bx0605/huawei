@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class 数大雁 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String inputSound=sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String inputSound=scanner.nextLine();
         System.out.println(getDuackNum(inputSound));
     }
     //定义一个获取大雁数量的方法

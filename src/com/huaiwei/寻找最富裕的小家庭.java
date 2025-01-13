@@ -4,13 +4,13 @@ import java.util.*;
 
 public class 寻找最富裕的小家庭 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int nums=sc.nextInt();
-        sc.nextLine();
-        String familyMoney=sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        int nums=scanner.nextInt();
+        scanner.nextLine();
+        String familyMoney=scanner.nextLine();
         Map<Integer, List<Integer>> familys=new HashMap<>();
         for (int i=0;i<nums-1;i++){
-            String line=sc.nextLine();
+            String line=scanner.nextLine();
             Integer key=Integer.parseInt(line.split(" ")[0]);
             Integer value=Integer.parseInt(line.split(" ")[1]);
             if (familys.containsKey(key)){

@@ -8,18 +8,18 @@ public class 智能成绩表 {
         String name;
         Map<String,Integer> object;
         //总分
-        int scores;
+        int scannerores;
         public Student(String name){
             this.name=name;
             this.object=new HashMap<>();
         }
 
-        public void add(String object,int score){
-            this.object.put(object,score);
-            scores+=score;
+        public void add(String object,int scannerore){
+            this.object.put(object,scannerore);
+            scannerores+=scannerore;
         }
         public int compareTo(Student o){
-            int p1=scores,p2=o.scores;
+            int p1=scannerores,p2=o.scannerores;
             if (this.object.containsKey(stand)){
                 p1=this.object.get(stand);
                 p2=o.object.get(stand);
@@ -32,24 +32,24 @@ public class 智能成绩表 {
         }
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //m个学生
-        int m=sc.nextInt();
+        int m=scanner.nextInt();
         //n个科目
-        int n=sc.nextInt();
-        sc.nextLine();
+        int n=scanner.nextInt();
+        scanner.nextLine();
         List<Student> students=new ArrayList<>();
-        String [] objects=sc.nextLine().split(" ");
+        String [] objects=scanner.nextLine().split(" ");
         for (int i=0;i<m;i++){
-            String name=sc.next();
+            String name=scanner.next();
             Student student=new Student(name);
             for (int j=0;j<n;j++){
-                int score=sc.nextInt();
-                student.add(objects[j],score);
+                int scannerore=scanner.nextInt();
+                student.add(objects[j],scannerore);
             }
             students.add(student);
         }
-        stand=sc.next();
+        stand=scanner.next();
         Collections.sort(students);
 
         for (Student s:students){

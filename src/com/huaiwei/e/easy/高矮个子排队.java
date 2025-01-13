@@ -8,8 +8,8 @@ public class 高矮个子排队 {
      */
     public static void main(String[] args) {
         //输入班级小朋友身高集合
-        Scanner sc = new Scanner(System.in);
-        String high = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String high = scanner.nextLine();
         String[] s = high.split(" ");
         int [] ints=new int[s.length];
         for (int i=0;i<s.length;i++){

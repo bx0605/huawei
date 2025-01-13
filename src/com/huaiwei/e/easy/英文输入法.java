@@ -7,9 +7,9 @@ import java.util.TreeSet;
 
 public class 英文输入法 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        String pre=sc.nextLine();
+        Scanner scanner=new Scanner(System.in);
+        String str=scanner.nextLine();
+        String pre=scanner.nextLine();
         compute(str,pre);
     }
     public static String remove(String ori){

@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class 围棋的气 {
     static int maxSide=18;
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String locWhite=sc.nextLine();
-        String locBlack=sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String locWhite=scanner.nextLine();
+        String locBlack=scanner.nextLine();
         String[] locWhites=transform(locWhite);
         String[] locBlacks=transform(locBlack);
         System.out.println(counting(locWhites,locBlacks)+" "+counting(locBlacks,locWhites));

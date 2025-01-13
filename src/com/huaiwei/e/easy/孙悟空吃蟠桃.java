@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class 孙悟空吃蟠桃 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         //第一行输入每棵树上蟠桃的数量
-        String line=sc.nextLine();
+        String line=scanner.nextLine();
         List<Integer> list=new ArrayList<>();
         for (String i:line.split(" ")){
             list.add(Integer.valueOf(i));
         }
         //第二行输入守卫离开的时间
-        Integer tim=sc.nextInt();
+        Integer tim=scanner.nextInt();
         if (tim< list.size()){
             System.out.println(0);
             }else{

@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class 用连续自然数之和来表达整数 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t=sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int t=scanner.nextInt();
         solve(t);
     }
     public static void solve(int t){

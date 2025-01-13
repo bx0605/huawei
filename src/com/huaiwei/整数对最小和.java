@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 public class 整数对最小和 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String num1=sc.nextLine();
-        String num2=sc.nextLine();
-        int k=sc.nextInt();
+        Scanner scanner=new Scanner(System.in);
+        String num1=scanner.nextLine();
+        String num2=scanner.nextLine();
+        int k=scanner.nextInt();
         int len1=Integer.parseInt(num1.split(" ")[0]);
         int len2=Integer.parseInt(num2.split(" ")[0]);
         int [] arr1=new int[len1];
