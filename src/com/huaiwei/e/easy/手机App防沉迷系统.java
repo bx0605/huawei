@@ -20,6 +20,8 @@ public class 手机App防沉迷系统 {
         }
     }
 
+
+
     //定义将HH:MM转换为分钟的方法
     public static int toMinutes(String time) {
         int hour = Integer.parseInt(time.substring(0, 2));
